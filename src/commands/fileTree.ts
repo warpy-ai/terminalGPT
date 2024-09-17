@@ -6,7 +6,8 @@ import { Plugin } from "./index";
 const fileScannerPlugin: Plugin = {
   name: "fileScanner",
   keyword: "@filetree",
-  description: "Scans the project directory and returns important files",
+  description:
+    "Scans the current directory tree, storing file names and paths for later reference with @file",
   execute: async () => {
     const projectRoot = process.cwd();
     const importantFiles = [

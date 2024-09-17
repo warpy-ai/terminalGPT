@@ -7,6 +7,7 @@
     "tgpt": "node lib/index.js",
     "test": "jest --ci --coverage --verbose",
     "dev": "ts-node src/index.ts chat  --temperature 0.7",
+    "dev:test": "ts-node src/multiline.ts",
     "dev:delete": "ts-node src/index.ts delete",
     "postinstall": "tsc"
   },
@@ -46,13 +47,16 @@
     "execa": "^9.3.1",
     "gradient-string": "^2.0.2",
     "hnswlib-node": "^3.0.0",
+    "jsdom": "^25.0.0",
     "lowdb": "^5.1.0",
     "markdown": "^0.5.0",
     "marked": "^9.1.6",
     "marked-terminal": "^6.0.0",
     "openai": "^4.17.4",
     "ora": "^5.4.1",
+    "playwright": "^1.47.1",
     "prompts": "^2.4.2",
+    "random-useragent": "^0.5.0",
     "typesync": "^0.11.1"
   },
   "devDependencies": {

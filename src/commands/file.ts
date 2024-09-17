@@ -7,7 +7,8 @@ import { promptResponse } from "../utils"; // Assuming this function exists
 const filePlugin: Plugin = {
   name: "file",
   keyword: "@file",
-  description: "Handles file operations and references",
+  description:
+    "Reads and analyzes a specific file, providing understanding and change recommendations",
   execute: async (context: {
     userInput: string;
     engine: string;
