@@ -15,7 +15,8 @@ const webPlugin: Plugin = {
     opts: any;
   }) => {
     const { userInput, engine, apiKey, opts } = context;
-    const query = userInput.slice(5).trim(); // Remove "@web " from the input
+    // use regex to remove keyword
+    const query = userInput.replace("@web", "").trim();
 
     if (query) {
       try {
